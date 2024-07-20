@@ -1,0 +1,51 @@
+/* Custom styles for larger buttons */
+
+*{
+    scroll-behavior: smooth;
+   }
+
+
+.btn-custom {
+    padding: 10px 20px;
+    font-size: 2rem; /* Adjust the font size */
+    border-radius: 5px; /* Optional: to give rounded corners */
+}
+
+/* Specifically for navbar buttons */
+.navbar .btn {
+    padding: 10px 20px;
+    font-size: 2rem;
+}
+
+/* Specifically for the search button */
+.search .btn {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+}
+
+#feature{
+    background-color: aqua;
+    background: linear-gradient(to right, #00FFFF, #87CEEB);
+    background: linear-gradient(to left, #00FFFF, #2E8B57);
+}
+
+.row{
+    color:rgb(18, 28, 204);
+}
+ 
+.carosusel-indicators li{
+    width: auto;
+    height: auto;
+}
+
+.single_product{
+    background-color: (241,240,240);
+}
+.product_img{
+    position: relative;
+}
+
+.bg_checkout_1{
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%,#E0C3FC);
+}
