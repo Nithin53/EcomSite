@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>E-Commerce</title>
+</head>
+<body id="top">
+       <!-- ==============header menu section starts here============== -->
+<section class="header_menu" id="header_menu">
+    <div class="container-fluid px-0 shadow">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+            <a class="navbar-brand pl-5 pl-small-0" href="index.html">
+                <img src="Ananta_logo_w&b_2.png" class="img img-fluid" width="120px" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <!-- 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    -->
+                </ul>
+                <div class="search mr-3">
+                    <a href="search.html" class="btn btn-sm btn-outline-primary">Search</a>
+                </div>
+                <div class="cart">
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart fa-2x"></i>
+                        <span class="badge badge-pill badge-primary">24</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+<!-- ==============header menu section ends here============== -->
+ 
+<!-- ==============order_confirmation starts here============== -->
+<section class="order_confirmation py-5 my-5" id="order_confirmation">
+    <div class="container">
+        <div class="section_title text-center mb-5">
+            <h1 class="text-capitalize">order confirmation</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <div>
+                    <img src="data:image/png;base64,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" class="img img-fluid" alt="image">
+                </div>
+                <div>
+                    <h2>Thank you for your purchase!</h2>
+                    <h6>A confirmation email has been sent to <b>kavamba12@gmail.com</b></h6>
+                    <h6>
+                        <span class="mr-2">Order No:</span><span><b>1239964085</b></span>
+                    </h6>
+                    <h6>
+                        <span class="mr-2">Order Status:</span>
+                        <span>
+                            <b>
+                                <span class="badge badge-danger">Pending</span>
+                            </b>
+                        </span>
+                    </h6>
+                    <a href="index.html" class="btn btn-primary btn-lg mt-5">Return to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==============order_confirmation ends here============== -->
+
+
+<!-- ==============footer starts here============== -->
+<section class="footer_section pt-5 pb-2" id="footer_section">
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-6 pl-5 pl-small-15">
+                    <div class="footer_title">
+                        <a href="index.html"><img src="footer_ananta_logo.png" width="150px" class="img img-fluid" alt="logo"></a>
+                    </div>
+                    <div>
+                        Discover Infinite Style with Ananta: Where Fashion Meets Endless Possibilities!
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="footer_title pt-3 mb-3">
+                        <h3>Quick Links</h3>
+                    </div>
+                    <div class="footer_links">
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="javascript:;">Offers & Discounts</a></li>
+                            <li><a href="javascript:;">Get Coupon</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="footer_title pt-3 mb-3">
+                        <h3>New Products</h3>
+                    </div>
+                    <div class="footer_links">
+                        <ul>
+                            <li><a href="javascript:;">Woman Cloth</a></li>
+                            <li><a href="javascript:;">Fashion Accessories</a></li>
+                            <li><a href="javascript:;">Man Accessories</a></li>
+                            <li><a href="javascript:;">Rubber made Toys</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="footer_title pt-3 mb-3">
+                        <h3>Support</h3>
+                    </div>
+                    <div class="footer_links">
+                        <ul>
+                            <li><a href="javascript:;">Frequently Asked Questions</a></li>
+                            <li><a href="javascript:;">Terms & Conditions</a></li>
+                            <li><a href="javascript:;">Privacy Policy</a></li>
+                            <li><a href="javascript:;">Report a Payment Issue</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-top">
+            <h6 class="text-center mt-3">Copyright ©2024 All rights reserved</h6>
+        </div>
+    </footer>
+</section>
+<div class="backtop">
+    <a id="button" href="#top" class="btn btn-lg btn-outline-danger" role="button">
+        <i class="fas fa-chevron-up text-dark"></i>
+    </a>
+</div>
+<!-- ==============footer ends here============== -->
+</body>
+</html>
